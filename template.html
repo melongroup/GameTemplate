@@ -40,13 +40,7 @@
         <!--autoend-->
 
 
-        <script type="module">
-            import { Main } from "./bin-debug/src/Main.js"
-            /*config-start*/
-            /*config-end*/
-            var requestAnimationFrame = window['requestAnimationFrame'] || window['webkitRequestAnimationFrame'] || window['mozRequestAnimationFrame'] || window['oRequestAnimationFrame'] || window['msRequestAnimationFrame'];
-            new Main().init(document.getElementById("game"));
-        </script>
+        <script type="module" src="./bin-debug/src/Main.js"></script>
 
 
     </head>

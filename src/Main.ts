@@ -1,7 +1,7 @@
 import "../melon/src/core/Extend.js";
+import { Engine } from "../melon/src/core/Engine.js";
 import { context3D } from "../melon/src/display/stage3D/Stage3D.js";
 import { VertexInfo } from "../melon/src/display/stage3D/Geometry.js";
-import { Engine } from "../melon/src/core/Engine.js";
 import { App } from "../melon/src/App.js";
 
 export class Main extends App {
@@ -59,3 +59,5 @@ export class Main extends App {
         // this.updateSceneTransform();
     }
 }
+
+new Main().init(document.getElementById("game") as HTMLCanvasElement);
